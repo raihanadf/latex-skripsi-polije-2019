@@ -1,0 +1,39 @@
+\documentclass[a4paper, 12pt]{article}
+
+% page margin
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % image importing stuff
+\usepackage{mathptmx} % use adobe times roman
+\usepackage{listings} % for code blocks
+\usepackage{indentfirst} % indent first line on paraghraph
+\usepackage{sectsty} % for modifying section
+\usepackage{setspace} % buat spacing
+\usepackage{array} % buat tabel array
+\usepackage{enumitem} % indenting enumerate list
+\usepackage{geometry} % setup paper size or margin
+\usepackage{lipsum} % setup paper size or margin
+\geometry{
+top=4cm,
+left=4cm,
+right=3cm,
+bottom=3cm,
+}
+\onehalfspacing
+\usepackage{hyperref}
+\urlstyle{same}
+\hypersetup{colorlinks=false}
+
+\def \bc{\begin{center}}
+\def \ec{\end{center}}
+\setcounter{section}{1}
+
+\usepackage[
+backend=biber,
+style=apa,
+]{biblatex}
+\addbibresource{refs.bib}
+\renewcommand{\contentsname}{\centering DAFTAR ISI}
+\renewcommand{\listtablename}{\centering DAFTAR TABEL}
+
+\hbadness=3000

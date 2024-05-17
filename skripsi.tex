@@ -1,0 +1,28 @@
+\input{chapters/init.tex} % Init configuration
+
+%-- (( START OF DOCUMENT )) -- // Start
+\begin{document}
+
+% cover -- no numbering | COVER
+\thispagestyle{empty}
+\input{chapters/cover.tex}
+
+% front end -- roman numbering | PENGESAHAN DAN ABSTRAKSI
+\clearpage
+\pagenumbering{roman} 
+\input{chapters/acknowledgment.tex}
+\input{chapters/abstract.tex}
+
+\input{chapters/toc.tex}
+
+% front end -- arabic numbering | BAB 1 DAN BAB 2
+\clearpage
+\pagenumbering{arabic} 
+\input{chapters/chapter_one.tex}
+\input{chapters/chapter_two.tex}
+
+% DAFTAR PUSTAKA
+\input{chapters/_bibliography.tex} 
+
+\end{document}
+%-- (( END OF DOCUMENT )) -- // End
